@@ -5,9 +5,9 @@
 Streple api gateway interacts with the user as well as the services
 
 ## Services
-# Trading Service
-# Crypto Service
-# User Service
+#### Trading Service
+#### Crypto Service
+#### User Service
 
 ## Installation
 
