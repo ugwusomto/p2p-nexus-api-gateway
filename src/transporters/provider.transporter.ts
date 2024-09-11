@@ -9,6 +9,6 @@ const TRANSPORTERS = [
             host: 'redis://localhost:6379',
         },
     }
-] as ClientProviderOptions[];
+] as ClientProviderOptions[]; 
 
 export default TRANSPORTERS

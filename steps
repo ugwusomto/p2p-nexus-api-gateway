@@ -3,3 +3,4 @@
 3. add redis package for transport layer and nest microservice 
 4. Add transporters and export module 
 5. Add injection token options
+6. add npm i --save @nestjs/config for env file read
