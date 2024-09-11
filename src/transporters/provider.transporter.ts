@@ -1,14 +1,20 @@
-import { ClientProviderOptions, Transport } from "@nestjs/microservices";
+import { ConfigService } from "@nestjs/config";
+import { ClientProviderOptions, ClientProxyFactory, Transport } from "@nestjs/microservices";
 import { INJECTION_TOKENS } from "src/constants/index.constant";
 
-const TRANSPORTERS = [
+export const TRANSPORT_PROVIDER = [
     {
-        name: INJECTION_TOKENS.USER_SERVICE,
-        transport: Transport.REDIS,
-        options: {
-            host: 'redis://localhost:6379',
+        provide: INJECTION_TOKENS.USER_SERVICE,
+        useFactory: (configService: ConfigService) => {
+            const redisServicer = configService.get<string>("REDIS_SERVER")
+            return ClientProxyFactory.create({
+                transport: Transport.REDIS,
+                options: {
+                    host: "localhost",
+                    port: 6379
+                }
+            })
         },
+        inject: [ConfigService]
     }
-] as ClientProviderOptions[]; 
-
-export default TRANSPORTERS
+];
