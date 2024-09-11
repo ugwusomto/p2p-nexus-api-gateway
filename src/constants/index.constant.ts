@@ -1,0 +1,3 @@
+export const INJECTION_TOKENS = {
+    USER_SERVICE:"USER_SERVICE"
+}

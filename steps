@@ -1,0 +1,5 @@
+1. Implement auth module and implement register and login function
+2. configure api gateway to send out the request to the user service through a transport layer
+3. add redis package for transport layer and nest microservice 
+4. Add transporters and export module 
+5. Add injection token options
