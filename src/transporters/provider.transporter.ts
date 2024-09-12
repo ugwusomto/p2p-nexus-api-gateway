@@ -14,7 +14,6 @@ export const TRANSPORT_PROVIDER = [
                     port: 6379,
                     retryAttempts: 5,
                     retryDelay: 1000,
-                    
                 }
             })
         },

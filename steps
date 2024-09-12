@@ -14,3 +14,4 @@
 14. Talk about how the redis server works and doesn't keep a log of the message for the service to consume once it comes up
 15. Share that we can use Redis Stream that keeps a log of the message , - redis uses a fire-forget mode 
 16. Set timeout to your transport and retry options
+17. Go on and work on user-service ( start from no 1)

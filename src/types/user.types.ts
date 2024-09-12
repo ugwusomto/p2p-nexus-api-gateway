@@ -1,4 +1,4 @@
-interface IUser {
+interface ICreateUser {
     firstname: string;
     lastname: string;
     email: string;
