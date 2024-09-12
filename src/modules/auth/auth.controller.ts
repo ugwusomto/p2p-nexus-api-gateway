@@ -9,7 +9,7 @@ export class AuthController {
 
     @Post("register")
     async registerUser(@Body() body : RegisterDTO){
-    
+        return {message:"successfuly sent"}
     }
 
 

@@ -11,8 +11,6 @@ async function bootstrap() {
   }));
   app.useGlobalFilters(new GlobalExceptionFilter());
   app.useGlobalInterceptors(new ResponseInterceptor())
-
   await app.listen(3000);
-
 }
 bootstrap();
