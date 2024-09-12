@@ -8,3 +8,6 @@
 8. Add global pipe validation / dto
 9. Added register dto and login dto 
 10. Install ioredis
+11. Add exception filter for structuring our exceptions messages
+12. Add interceptors to organize our respose as well
+
