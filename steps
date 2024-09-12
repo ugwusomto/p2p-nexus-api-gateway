@@ -4,3 +4,7 @@
 4. Add transporters and export module 
 5. Add injection token options
 6. add npm i --save @nestjs/config for env file read
+7. setup the user service client 
+8. Add global pipe validation / dto
+9. Added register dto and login dto 
+10. Install ioredis

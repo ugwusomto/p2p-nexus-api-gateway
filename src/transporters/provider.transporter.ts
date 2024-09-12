@@ -4,7 +4,7 @@ import { INJECTION_TOKENS } from "src/constants/index.constant";
 
 export const TRANSPORT_PROVIDER = [
     {
-        provide: INJECTION_TOKENS.USER_SERVICE,
+        provide: INJECTION_TOKENS.USER_SERVICE_CLIENT,
         useFactory: (configService: ConfigService) => {
             const redisServicer = configService.get<string>("REDIS_SERVER")
             return ClientProxyFactory.create({
