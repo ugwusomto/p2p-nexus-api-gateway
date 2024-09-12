@@ -11,7 +11,10 @@ export const TRANSPORT_PROVIDER = [
                 transport: Transport.REDIS,
                 options: {
                     host: "localhost",
-                    port: 6379
+                    port: 6379,
+                    retryAttempts: 5,
+                    retryDelay: 1000,
+                    
                 }
             })
         },

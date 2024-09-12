@@ -10,4 +10,7 @@
 10. Install ioredis
 11. Add exception filter for structuring our exceptions messages
 12. Add interceptors to organize our respose as well
-
+13. Test out the request without providing the user service to consume it 
+14. Talk about how the redis server works and doesn't keep a log of the message for the service to consume once it comes up
+15. Share that we can use Redis Stream that keeps a log of the message , - redis uses a fire-forget mode 
+16. Set timeout to your transport and retry options

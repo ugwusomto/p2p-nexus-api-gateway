@@ -10,7 +10,7 @@ export class UserService {
     constructor(@Inject(INJECTION_TOKENS.USER_SERVICE_CLIENT) private readonly userServiceClient: ClientProxy) { }
 
 
-    async createUser(userData : Type<RegisterDTO>):Promise<any> {
+    async createUser(userData : Partial<IUser>):Promise<any> {
         return  await firstValueFrom(this.userServiceClient.send({cmd:"valo"},userData));
     }
 }
