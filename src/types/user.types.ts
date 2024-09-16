@@ -4,3 +4,8 @@ interface ICreateUser {
     email: string;
     password: string;
 }
+
+interface ICreateLogin {
+    email: string;
+    password: string;
+}

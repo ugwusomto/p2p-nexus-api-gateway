@@ -14,4 +14,17 @@
 14. Talk about how the redis server works and doesn't keep a log of the message for the service to consume once it comes up
 15. Share that we can use Redis Stream that keeps a log of the message , - redis uses a fire-forget mode 
 16. Set timeout to your transport and retry options
-17. Go on and work on user-service ( start from no 1)
+
+
+Go BACK TO USER SERVICE ( start from no 1)
+
+17. Work on the login route and service to send request to user service
+18. Install passport - npm install --save @nestjs/passport passport passport-local
+19. Install types - npm install --save-dev @types/passport-local
+20. Setup local strategy
+21. Setup guard
+22. Set up jwt - npm install --save @nestjs/jwt passport-jwt & npm install --save-dev @types/passport-jwt
+23. Setup middleware for authenticating route
+
+Go BACK TO USER SERVICE ( start from no 10)
+

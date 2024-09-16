@@ -13,4 +13,9 @@ export class UserService {
     async createUser(userData: ICreateUser): Promise<any> {
         return await firstValueFrom(this.userServiceClient.send({ cmd: MESSAGE_PATTERN.REGISTER_USER }, userData));
     }
+
+    async login(userData: ICreateLogin): Promise<any> {
+        console.log(userData)
+        return await firstValueFrom(this.userServiceClient.send({ cmd: MESSAGE_PATTERN.LOGIN_USER }, userData));
+    }
 }
